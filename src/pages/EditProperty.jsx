@@ -347,6 +347,7 @@ function EditProperty() {
                   className="edit-input"
                   value={property.bedrooms}
                   onChange={handleChange}
+                  min='1'
                   placeholder="Bedrooms"
                 />
 
@@ -367,6 +368,7 @@ function EditProperty() {
                   className="edit-input"
                   value={property.bathrooms}
                   onChange={handleChange}
+                  min='1'
                   placeholder="Bathrooms"
                 />
 
