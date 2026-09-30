@@ -205,14 +205,15 @@ function AddProperty() {
                   Bedrooms
                 </label>
 
-                <input
-                  type="number"
-                  name="bedrooms"
-                  className="custom-input"
-                  value={property.bedrooms}
-                  onChange={handleChange}
-                  placeholder="e.g. 4"
-                />
+               <input
+                type="number"
+                name="bedrooms"
+                value={property.bedrooms}
+                onChange={handleChange}
+                min="1"
+                placeholder="e.g. 2"
+                className="form-control"
+              />
 
               </div>
 
@@ -231,6 +232,7 @@ function AddProperty() {
                   className="custom-input"
                   value={property.bathrooms}
                   onChange={handleChange}
+                  min="1"
                   placeholder="e.g. 3"
                 />
 
